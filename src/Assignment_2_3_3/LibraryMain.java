@@ -46,28 +46,5 @@ public class LibraryMain {
 
         // X2 should be back
         library.displayBooks();
-
-        System.out.println();
-
-        // Task 3:
-        // X1 was never borrowed, should be true
-        System.out.println("Is X1 available? " + library.isBookAvailable("X1"));
-
-        // no X4 should be false
-        System.out.println("Is X4 available? " + library.isBookAvailable("X4"));
-
-        // Borrow X3, should be false
-        Book borrowed2 = library.borrowBook("X3");
-        System.out.println("Is X3 available? " + library.isBookAvailable("X3"));
-
-        // return X3, should be true again!
-        library.returnBook(borrowed2);
-        System.out.println("Is X3 available? " + library.isBookAvailable("X3"));
-
-        if (library.isBookAvailable("X2")) {
-            System.out.println("X2 can be borrowed");
-        } else {
-            System.out.println("X2 is currently borrowed");
-        }
     }
 }
